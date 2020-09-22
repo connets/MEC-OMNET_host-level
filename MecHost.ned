@@ -29,11 +29,11 @@ module MecHost
             @display("p=538,310");
         }
         mad: MecAppDispatcher {
-            @display("p=286,192");
+            @display("p=273,198.9");
         }
         vrouter: Router {
             parameters:
-            	@display("p=297,310");
+                @display("p=297,310");
             gates:
                 pppg[1];
         }
