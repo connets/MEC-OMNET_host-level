@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<fectable>
+	<fecentry>
+		<id>1</id>
+		<destination>dummy</destination>
+		<tunnel_id>1</tunnel_id>
+		<lspid>100</lspid>
+	</fecentry>
+	<fecentry>
+		<id>2</id>
+		<destination>mecHost1.nfvi</destination>
+		<tunnel_id>2</tunnel_id>
+		<lspid>200</lspid>
+	</fecentry>
+	<fecentry>
+		<id>3</id>
+		<destination>mecHost2.nfvi</destination>
+		<tunnel_id>3</tunnel_id>
+		<lspid>300</lspid>
+	</fecentry>
+	<fecentry>
+		<id>4</id>
+		<destination>mecApp[0].vm</destination>
+		<tunnel_id>4</tunnel_id>
+		<lspid>401</lspid>
+	</fecentry>
+	<fecentry>
+		<id>5</id>
+		<destination>mecApp[1].vm</destination>
+		<tunnel_id>5</tunnel_id>
+		<lspid>401</lspid>
+	</fecentry>
+</fectable>

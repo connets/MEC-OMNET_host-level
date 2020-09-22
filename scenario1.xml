@@ -1,0 +1,6 @@
+<scenario>
+    <at t="61">
+    	<set-param module="NetworkApplicationTest.user" par="numApps" value="2"/>
+    	<set-param module="NetworkApplicationTest.user.app[1]" par="destAddr" value="mecApp[1].vm"/>
+    </at>
+</scenario>
