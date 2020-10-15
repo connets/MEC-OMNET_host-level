@@ -1,12 +1,12 @@
 #
-# OMNeT++/OMNEST Makefile for Mpls_MEC
+# OMNeT++/OMNEST Makefile for MEC-OMNET_host-level
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out -KINET_PROJ=../inet -DINET_IMPORT -I. -I$$\(INET_PROJ\)/src -L$$\(INET_PROJ\)/src -lINET$$\(D\)
 #
 
 # Name of target to be created (-o option)
-TARGET = Mpls_MEC$(D)$(EXE_SUFFIX)
+TARGET = MEC-OMNET_host-level$(D)$(EXE_SUFFIX)
 TARGET_DIR = .
 
 # User interface (uncomment one) (-u option)

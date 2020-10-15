@@ -118,8 +118,9 @@ void MigrationApp::migrate()
 void MigrationApp::route_label(){
     //    EV << "Aggiungo la route..." << "router_ext.classifier" << endl;
     EV << "Aggiungo la route..." << "router_"<< to <<".classifier" << endl;
-    const char * router_dest = ("router_"+ to + ".classifier").c_str(); // non dovrebbe cambaire, vengono aggiunte in tutti
-    MecRsvpClassifier *userClassifier = check_and_cast<MecRsvpClassifier*>(getModuleByPath(router_dest));
+    //const char * router_dest = ("router_"+ to + ".classifier").c_str(); // non dovrebbe cambaire, vengono aggiunte in tutti
+    std::string router_dest = "router_ext.classifier";
+    MecRsvpClassifier *userClassifier = check_and_cast<MecRsvpClassifier*>(getModuleByPath(router_dest.c_str()));
 
     //    userClassifier->add_in_table(3, 3, 300, "user");
     const char * dest = ("mecApp["+ std::to_string(numMecApp) +"].vm").c_str();
@@ -148,8 +149,9 @@ void MigrationApp::route_label(){
 
 
 
-    const char * arp_module_string = ("mecApp["+ std::to_string(numMecApp)+ "].vm.ipv4.arp").c_str();
-    Arp_public *arp_module = check_and_cast<Arp_public*>(getModuleByPath(arp_module_string));
+    //const char * arp_module_string = ("mecApp["+ std::to_string(numMecApp)+ "].vm.ipv4.arp").c_str();
+    std::string arp_module_string = "mecApp["+ std::to_string(numMecApp)+ "].vm.ipv4.arp";
+    Arp_public *arp_module = check_and_cast<Arp_public*>(getModuleByPath(arp_module_string.c_str()));
 
     arp_module->flush_public();
 
