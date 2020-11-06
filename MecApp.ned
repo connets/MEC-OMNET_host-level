@@ -19,7 +19,7 @@ import inet.node.ospfv2.OspfRouter;
 import inet.visualizer.integrated.IntegratedCanvasVisualizer;
 import inet.node.ethernet.Eth10G;
 import inet.node.ethernet.EtherSwitch;
-
+import inet.mobility.static.StationaryMobility;
 
 module MecApp
 {
@@ -33,6 +33,8 @@ module MecApp
             numEthInterfaces = 1;
             ipv4.arp.typename = "Arp_public";
         }
+        mobility: StationaryMobility;   
+        
     connections:
-        vEth <--> Eth10G <--> vm.ethg++;
+        vEth <--> Eth10G <--> vm.ethg++; 
 }
