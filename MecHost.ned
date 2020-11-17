@@ -25,7 +25,7 @@ module MecHost
         inout vEthInt[] @loose;
 
     submodules:
-        nfvi: StandardHost {
+        mecPlatform: StandardHost {
             @display("p=538,310");
         }
         mad: MecAppDispatcher {
@@ -40,6 +40,6 @@ module MecHost
     connections:
         vrouter.pppg[0] <--> vEthExt;  //external
         vrouter.ethg++ <--> VirtualEthernet <--> mad.toSwitch;  // to Mec App Dispatcher
-        vrouter.ethg++ <--> Eth100M <--> nfvi.ethg++;
+        vrouter.ethg++ <--> Eth100M <--> mecPlatform.ethg++;
 }
 

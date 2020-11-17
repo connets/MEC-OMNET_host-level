@@ -37,7 +37,6 @@ OBJS = \
     $O/MecRsvpClassifier.o \
     $O/MigrationApp.o \
     $O/Myrsvp.o \
-    $O/NodeTest.o \
     $O/SpawnApp.o \
     $O/Ted_Mec.o \
     $O/MadMessage_m.o

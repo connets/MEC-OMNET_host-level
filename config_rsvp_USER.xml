@@ -18,7 +18,7 @@
 	</session>
 	
 	<session>
-		<endpoint>mecHost1.nfvi</endpoint>
+		<endpoint>mecHost1.mecPlatform</endpoint>
 		<tunnel_id>2</tunnel_id>
 		<paths>
 			<path>
@@ -33,7 +33,7 @@
 	</session>
 	
 	<session>
-		<endpoint>mecHost2.nfvi</endpoint>
+		<endpoint>mecHost2.mecPlatform</endpoint>
 		<tunnel_id>3</tunnel_id>
 		<paths>
 			<path>

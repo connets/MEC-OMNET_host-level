@@ -1,6 +1,6 @@
 <config>
 <interface hosts='user' address='10.x.x.x' netmask='255.x.x.x'/> \
-<interface hosts='*.nfvi' address='11.x.x.x' netmask='255.x.x.x'/> \
+<interface hosts='*.mecPlatform' address='11.x.x.x' netmask='255.x.x.x'/> \
 <interface hosts='mecApp*.vm' address='12.x.x.x' netmask='255.x.x.x'/> \
 
 <interface hosts='mecHost*.*' address='13.x.x.x' netmask='255.x.x.x'/> \

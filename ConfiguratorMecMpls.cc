@@ -55,7 +55,9 @@ void ConfiguratorMecMpls::rsvp_insert(){
 }
 
 void ConfiguratorMecMpls::reinsert_routes(){
+    //metodo copiato da inet ipv4 network configurator metodo readManualRouteConfiguration
     cXMLElementList routeElements = configuration->getChildrenByTagName("route");
+
     for (auto & routeElement : routeElements) {
         const char *hostAttr = xmlutils::getMandatoryFilledAttribute(*routeElement, "hosts");
         const char *destinationAttr = xmlutils::getMandatoryAttribute(*routeElement, "destination");    // destination address  (L3AddressResolver syntax)

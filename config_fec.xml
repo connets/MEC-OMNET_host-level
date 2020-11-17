@@ -8,13 +8,13 @@
 	</fecentry>
 	<fecentry>
 		<id>2</id>
-		<destination>mecHost1.nfvi</destination>
+		<destination>mecHost1.mecPlatform</destination>
 		<tunnel_id>2</tunnel_id>
 		<lspid>200</lspid>
 	</fecentry>
 	<fecentry>
 		<id>3</id>
-		<destination>mecHost2.nfvi</destination>
+		<destination>mecHost2.mecPlatform</destination>
 		<tunnel_id>3</tunnel_id>
 		<lspid>300</lspid>
 	</fecentry>
